@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Inter", sans-serif;
+    
+}
+
+body .apresentacao {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 100vw;
+    min-height: 95vh;
+    padding: 2.6rem;
+    gap: 1rem;
+    background: url(/assets/fundo2.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.apresentacao .menu {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    margin: 8rem 0rem 2rem;
+}
+
+.menu textarea {
+    display: flex;   
+    height: 100%;
+    font-size: 2rem;
+    text-transform: lowercase;
+    border: none;
+    resize: none;
+    background: none;
+    outline: 0;  
+}
+
+.menu textarea::placeholder {
+    text-transform: none;
+    color: #000000;
+}
+
+.menu .botoes__info{
+    justify-content: flex-start;
+    gap: .4rem;
+ 
+}
+
+.info__icon img {
+    width: 1rem;
+}
+
+.info__icon strong {
+    font-size: .80rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.botoes__info .botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.all-buttons {
+    font-size: 1rem;
+    font-weight: 400;
+    flex: 1;
+    width: 20.6rem;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1.4rem;
+    transition: .4s ease;
+}
+
+.all-buttons:hover {
+    cursor: pointer;
+}
+
+.botao_dark {
+    color: #FFFFFF;
+    background-color: #062346;
+}
+
+.botao_dark:hover {
+    background-color: #D8DFE8;
+}
+
+.botao__ligth {
+    color: #224257;
+    background-color: #bcbfc3;
+    border: 1px solid #4044ad;
+}
+
+.botao__ligth:hover {
+    background-color: #021124;
+    transition: .4s ease;
+}
+
+.apresentacao .apresentacao__resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2rem;
+    gap: 1.6rem;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 px 24px 32px -8px #FFFFFF;
+}
+
+.apresentacao__resultado img{
+    width: 100%;
+    max-width: 21rem;   
+}
+
+.apresentacao__resultado div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 21rem;
+    gap: 1rem;
+}
+
+.apresentacao__resultado h1{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.apresentacao__resultado p {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.apresentacao__resultado #output {
+    word-wrap: break-word;
+    width: 100%;
+    max-width: 21rem;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: #000000;
+    display: none;  
+}
+
+.apresentacao__resultado button {
+    display: none;  
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    background-color: #062346;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 700;
+}
+
+/*responsivo*/
+
+@media (max-width: 992px) {
+    body .apresentacao {
+        flex-direction: column;
+        min-height: 96vh;
+    }
+
+    .apresentacao .menu {
+        flex: 1;
+        margin: 4rem 0rem 1rem;
+    }
+
+    .apresentacao .apresentacao__resultado img {
+        display: none;
+    }
+
+    .apresentacao__resultado div {
+        max-width: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body .apresentacao {
+        padding: 1.5rem;
+    }
+
+    .apresentacao .menu .botoes__info .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentacao .all-buttons {
+        width: 100%;
+    }
+}

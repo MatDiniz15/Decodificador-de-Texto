@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="apresentacao">
+        <header> 
+            <img src="./assets/Frame 6.png" alt="Logo Alura">
+        </header>
+        <section class="menu">
+                <textarea id="mensagem" placeholder="Digite seu texto" maxlength="380" autocomplete="off"></textarea>
+            <div class="botoes__info">
+                <div class="info__icon">
+                    <img src="./assets/bi_exclamation-circle-fill.png" alt="atencao">
+                    <strong>Apenas letras minúsculas e sem acento.</strong>
+                </div>
+                <div class="botoes">
+                    <button class="all-buttons botao_dark" onclick="criptografar()">Criptografar</button>
+                    <button class="all-buttons botao__ligth" onclick="descriptografar()" >Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="apresentacao__resultado">
+            <img src="./assets/High quality products 1 1.png" alt="">
+                <div>
+                    <h3>Nenhuma mensagem encontrada</h3>
+                    <p>Digite um texto ao lado para criptografar ou descriptografar.</p>
+                </div>
+                <strong id="output">
+
+                </strong>
+                <button class="all-buttons botao__ligth" onclick="copiar()">Copiar</button>   
+        </section>
+    </section>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Matheus Diniz.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
